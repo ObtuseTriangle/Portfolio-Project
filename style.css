@@ -1,0 +1,254 @@
+h1{
+    font-family: 'Heebo';
+    color:white;
+}
+label{
+    color:white;
+    font-size: 20px;
+}
+form{
+    display: inline-block;
+}
+.textform{
+    justify-content: right;
+    text-align: right;
+}
+.welcome{
+    font-size: 200px;
+    text-align: left;
+    color:#BACCD6;
+}
+body{
+    background-color: #1a1a1a  ;
+    /*background-image: url(https://media2.giphy.com/media/QTc4NvhYNlyT7Q32uj/giphy.gif);*/
+}
+p{
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+}   
+.parentContainer{
+    position:relative;
+    text-align:center;
+    border-bottom: 1px solid #da4747;
+}
+.container{
+    text-align:center;
+    width: 100%;
+    position: relative;
+}
+.center{
+    font-size: 175px;
+    font-family: 'Heebo';
+    color:#F6F0ED;
+    position:absolute;
+    text-align: center;
+    bottom:0px;
+    letter-spacing: 10px;
+}
+
+.navli{
+    float:right;
+    font-family: 'Heebo';
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 22px 75px;
+    text-decoration: none;
+    transition: background-color 0.4s ease-out 20ms;
+
+}
+ul{
+    border-bottom: 1px solid gray;
+    list-style-type: none;
+    overflow:hidden;
+    background: rgb(25, 18, 18);
+}
+
+.active{
+    background-color: gray;
+    color: white;
+}
+
+.w3container{
+    animation-delay:4s;
+}
+.navbar{
+    top:-20px;
+    position: fixed;
+    z-index:1;
+    padding: 0%;
+    margin: 0%;
+    width:100%;
+}
+
+li :hover{
+    background-color: gray;
+}
+.logolink{
+    border: 1px solid transparent
+}
+.logolike :hover{
+    border-color: gray;
+}
+.logo{
+    width: 200px;
+    height: 60px;
+    margin-top: 5px;
+}
+/*
+.logo :hover{
+    border-color: gray;
+}
+*/
+.introImage{
+    width:100%;
+    height: 300px;
+    opacity:90%;
+    display: flex;
+}
+.myphoto{
+    border: 1px solid rgb(218, 71, 71);
+    width: 250px;
+    height: 250px;
+    padding: 0px;
+    margin-left: 50px;
+    margin-bottom: 90px;
+    float: middle;
+    display: inline-flex;
+}
+.generalheader{
+    color:white;
+    font-size:70px; 
+    margin: 20px;
+    font-family: 'Nunito Sans';
+    letter-spacing: 2px;
+}
+.intro1{
+    word-wrap: break-word;
+    width: 900px;
+    margin:10px;
+    padding:5px;
+    line-height: 60px;
+    font-family: 'Nunito Sans';
+}
+.flex{
+    display: flex;
+    margin:5px;
+}
+
+.media-icons{
+    height: 150px;
+    width: 100%;
+}
+.media-icon{
+    border: 1px solid #da4747;
+    transition: background-color 0.3s ease-out 20ms;
+    border-radius: 6px;
+    height: 150px;
+    width: 150px;
+    padding:0px 0px 15px 0px;
+    position: absolute;
+    margin-left: 20px;
+    filter: grayscale(40%);
+}
+.flexboxParent{
+    display: flex;
+}
+.column{
+    text-align: center;
+    border: 2px solid #da4747;
+    flex: 3;
+    padding: 5px;
+    height: 500px;
+    letter-spacing: 3px;
+    transition: background-color 0.3s ease-out 20ms;
+
+}
+.flexboxParent :hover{
+    background-color: #282828;
+}
+.column1{
+    margin-left: 5%;
+}
+.column3{
+    margin-right: 5%;
+}
+.skill-logo{
+    height: 300px;
+    width: 90%;
+    justify-content: center;
+    border: 1px solid #da4747;
+    padding: 15px;
+    filter: grayscale(20%);
+}
+.myskills{
+    background-color: #121212;
+}
+.skill-desc{
+    margin-left: 20px;
+}
+.otherskill{
+    height: 700px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #121212;
+    border: 1px solid #da4747;
+    transition: background-color 0.3s ease-out 20ms;
+}
+.otherskills :hover{
+    background-color: #1a1a1a;
+}
+.otherskills{
+    background-color: #121212;
+    border-top: 1px solid #da4747;
+}
+.media-icons :hover{
+    background-color: #282828;
+}
+.view-all-container{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    cursor:pointer;
+}
+.view-all-container :hover{
+    box-shadow: inset;
+    border-color: #da4747;
+    background-color: #556a8f;
+}
+
+.abt-me-view-all{
+    display: inline-block;
+    padding: 10px;
+    width: 90%;
+    position: absolute;
+    transition: background-color 0.3s ease-out 20ms;
+    border-color:#da4747;
+    background-color: #3f4968;
+    justify-content: center;
+    left: 60px;
+    top: 700px;
+    vertical-align: middle;
+    border-radius: 10px;
+    color:beige;
+    letter-spacing: 1px;
+    font-family: 'Nunito Sans';
+}
+
+/*
+hr{
+    height: 2px;
+    border: 0;
+    border-top: 3px solid #da4747;
+    margin: 1em 0;
+    padding: 0;
+}
+*/
+
+
+
+
