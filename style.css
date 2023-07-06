@@ -341,7 +341,9 @@ hr{
 
     background-color: #282828;
     color:white;
-    border-color: #da4747;
+    border: 3px solid transparent;
+    background: linear-gradient(#282828, #282828) padding-box, linear-gradient(to right, red, purple) border-box;
+
 
     font-size: 32px;
     z-index: 100;
