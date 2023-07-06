@@ -1,3 +1,13 @@
+@keyframes leftSlide{
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 h1{
     font-family: 'Heebo';
     color:white;
@@ -38,6 +48,7 @@ p{
     position: relative;
 }
 .center{
+    animation: .5s ease-out 0s 1 leftSlide;
     font-size: 175px;
     font-family: 'Heebo';
     color:#F6F0ED;
@@ -46,7 +57,19 @@ p{
     bottom:0px;
     letter-spacing: 10px;
 }
-
+.centerUnderline{
+    margin-left: 25px;
+    animation: 1.4s ease-out 0s 1 leftSlide;
+    font-size: 175px;
+    font-family: 'Heebo';
+    color:#F6F0ED;
+    position:absolute;
+    text-align: center;
+    bottom:0px;
+    letter-spacing: 10px;
+    text-decoration: 3px underline; 
+    text-underline-offset: .12em;
+}
 .navli{
     float:right;
     font-family: 'Heebo';
@@ -55,17 +78,31 @@ li a{
     display: block;
     color: white;
     text-align: center;
-    padding: 22px 75px;
+    padding: 22px 50px;
     text-decoration: none;
     transition: background-color 0.4s ease-out 20ms;
 
 }
 ul{
-    border-bottom: 1px solid gray;
     list-style-type: none;
     overflow:hidden;
     background: rgb(25, 18, 18);
 }
+.hidden{
+    display:none;
+    color: white;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.devlog{
+    border: 1px solid #da4747;
+    height: 350px;
+}
+
 
 .active{
     background-color: gray;
@@ -78,10 +115,27 @@ ul{
 .navbar{
     top:-20px;
     position: fixed;
-    z-index:1;
+    z-index:990;
     padding: 0%;
     margin: 0%;
     width:100%;
+}
+.progressBarCont{
+    padding: 0%;
+    margin: 0%;
+    position: fixed;
+    z-index: 999;
+    top: 60px;
+    width: 100%;
+    background: gray;
+    height: 3px;
+}
+.progressBar{
+    position: fixed;
+    height: 3px;
+    background-image: linear-gradient(to right, red, purple);
+    width: 0%;
+
 }
 
 li :hover{
@@ -114,7 +168,7 @@ li :hover{
     width: 250px;
     height: 250px;
     padding: 0px;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-bottom: 90px;
     float: middle;
     display: inline-flex;
@@ -140,6 +194,8 @@ li :hover{
 }
 
 .media-icons{
+    display:flex;
+    justify-content: space-evenly;
     height: 150px;
     width: 100%;
 }
@@ -149,13 +205,20 @@ li :hover{
     border-radius: 6px;
     height: 150px;
     width: 150px;
-    padding:0px 0px 15px 0px;
-    position: absolute;
-    margin-left: 20px;
     filter: grayscale(40%);
 }
 .flexboxParent{
     display: flex;
+}
+.flexboxParent2{
+    display: flex;
+    width: 100%;
+    background-color: #121212;
+
+}
+.hoverbutton :hover{
+    background-color: #6f81b7;
+
 }
 .column{
     text-align: center;
@@ -180,6 +243,8 @@ li :hover{
     height: 300px;
     width: 90%;
     justify-content: center;
+    margin: auto;
+    text-align: center;
     border: 1px solid #da4747;
     padding: 15px;
     filter: grayscale(20%);
@@ -191,9 +256,9 @@ li :hover{
     margin-left: 20px;
 }
 .otherskill{
-    height: 700px;
     width: 90%;
     margin-left: 5%;
+    padding-bottom: 40px;
     background-color: #121212;
     border: 1px solid #da4747;
     transition: background-color 0.3s ease-out 20ms;
@@ -218,25 +283,27 @@ li :hover{
 .view-all-container :hover{
     box-shadow: inset;
     border-color: #da4747;
-    background-color: #556a8f;
+    background-color: #282828;
 }
 
 .abt-me-view-all{
     display: inline-block;
     padding: 10px;
     width: 90%;
-    position: absolute;
     transition: background-color 0.3s ease-out 20ms;
     border-color:#da4747;
-    background-color: #3f4968;
+    background-color: #121212;
     justify-content: center;
-    left: 60px;
-    top: 700px;
     vertical-align: middle;
     border-radius: 10px;
     color:beige;
     letter-spacing: 1px;
     font-family: 'Nunito Sans';
+    
+
+    position: absolute;
+    left: 60px;
+    top: 700px;
 }
 
 /*
@@ -251,4 +318,117 @@ hr{
 
 
 
+.portfolio-work{
+    text-align: center;
+    border: 1px solid #da4747;
+    margin: 5%;
+    height: 700px;
+    width: 90%;
+}
 
+.scrollCont :hover{
+    background-color: #363636;
+
+}
+.scroll-to-top{
+    width: 50px;
+    height: 50px;
+    border-radius: 1000px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    background-color: #282828;
+    color:white;
+    border-color: #da4747;
+
+    font-size: 32px;
+    z-index: 100;
+    transition: background-color 0.4s ease-out 20ms;
+
+}
+
+
+
+.devMenu{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+.devMenu :hover{
+    background-color: #282828;
+}
+.devMenuItem{
+    justify-content: right;
+    margin-left: 0px;
+    width: 16%;
+    height: 50px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Nunito Sans';
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease-out 20ms;
+    border-color:#da4747;
+    background-color: #121212;
+    color: white;
+    border-radius: 5px;
+}
+/* Hidden Tabs on Dev Log Page */
+.homeLog{
+    display:none;
+    background-color: #121212;
+    margin: 2%;
+    border: 1px solid #da4747;
+}
+.aboutLog{
+    display:none;
+    background-color: #121212;
+    margin: 2%;
+    border: 1px solid #da4747;
+}
+.portfolioLog{
+    display:none;
+    background-color: #121212;
+    margin: 2%;
+    border: 1px solid #da4747;
+
+}
+.skillsLog{
+    display:none;
+    background-color: #121212;
+    margin: 2%;
+    border: 1px solid #da4747;
+
+}
+.devLogLog{
+    display:none;
+    background-color: #121212;
+    margin: 2%;
+    border: 1px solid #da4747;
+
+}
+
+.devBulletPoints{
+    color: white;
+    font-size: 30px;
+    margin: 20px;
+}
+.devContentList {
+    list-style: none;
+  }
+  
+.devContentList .devBulletPoints::before {
+    content: "\2022";  
+    color: white; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em; 
+  }
+  .underlined{
+    margin: auto;
+    border-bottom: 1px solid white;
+    width: 800px;
+    padding-bottom: 2px;
+  }

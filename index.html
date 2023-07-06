@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/5N6Rtvr1/oli2-2.png">
     <title>myPortfolio.</title>
 </head>
 
@@ -18,37 +19,45 @@
         <ul>
             <!-- just use an image tag -->
             <a href="index.html" class="logolink"><img src="https://i.postimg.cc/L5pS5MJM/my-Portfolio.png" class="logo" alt="logo"></a>
+            <li class="navli"><a href="devlog.html">Developer's Log</a></li>
             <li class="navli"><a href="myskills.html">My Skills</a></li>
             <li class="navli"><a href="myportfolio.html">My Portfolio</a></li>
             <li class="navli"><a href="aboutme.html">About Me</a></li>
             <li class="active navli"><a href="index.html" class="activaa">Home</a></li>
-
         </ul>
+        <div class="progressBarCont">
+            <div class="progressBar" id="scrollBar"></div>
+        </div>
     </div>
     <div class="parentContainer">
         <!-- Animated "Welcome" comes in from the left upon opening the site, over dark wooden background-->
         <div class="container">
             <img src="https://img.freepik.com/free-photo/black-wooden-surface-wallpaper_53876-138212.jpg" alt="Wood" class="introImage">
-            <div class="w3-container w3-center w3-animate-left">
+            <!--<div class="w3-container w3-center w3-animate-left">
                 <h1 class="center">Welcome.</h1>
             </div>
+            -->
+            <div>
+                <h1 class="center">Welcome.</h1>
+                <p class="centerUnderline"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p>
+            </div>
         </div>
-        <div class="w3-container w3-center w3-animate-left">
+        <!--<div class="w3-container w3-center w3-animate-left">
             <h1 class="center">Welcome.</h1>
-        </div>
+        </div>-->
     <div class="center">
 
     </div>
     </div>
     <!-- Brief Intro about myself, links back into a full page about myself -->
-    <h1 class="generalheader" style="display:inline">About Me: </h1> 
+    <h1 class="generalheader" style="display:inline;">About Me: </h1> 
         <a href="aboutme.html"> <div class="view-all-container">    
             <button class="abt-me-view-all">View All</button></a>
         </div>
     <div class="flex">
         <p class="intro1">
             Hello, my name is Oliver Bohon. I'm a junior at Bloomington South. 
-            I've always wanted to become either a doctor or a computer scientist, and I came to Nextech to give the latter a try. 
+            I have the ambition to become either a doctor or a computer scientist, and I came to Nextech to give the latter a try. 
             I hope you enjoy my website!
         </p>
         <div class="myphoto">
@@ -59,25 +68,30 @@
     
     <footer>
         <!-- Figuring out ways to establish contact with possible employers -->
-        <h1 class="generalheader" style="display:inline;">Contact Me: </h1>
-        <p class="intro1" style="line-height: 40px; margin-top: 0px;">You can contact me through any of the following: </p> <br>
+        <h1 class="generalheader" style="display:flex;">Contact Me: </h1>
+        <p class="intro1" style="line-height: 40px; margin-top: 0px; margin: 20px;">You can contact me through any of the following: </p> <br>
         <div class="media-icons">
             <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfpKFVcDPdkRdpnhmrkQNNBQlnvtzVjgctfZDDpCWTVwQVXcHQkcTVVstDWjXBNBhWGqZL">
                 <img src="https://assets.stickpng.com/images/5847fafdcef1014c0b5e48ce.png" class="media-icon" style="left: 100px; padding: 10px;">
             </a>
             <a href="https://www.linkedin.com/in/oliver-bohon-90a46627b/">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/640px-LinkedIn_logo_initials.png
-                " class="media-icon" style="left: 500px; padding:10px;">
+                " class="media-icon" style="padding:10px;">
             </a>
             <!--actual insta: https://www.instagram.com/oliver.bohon/-->
             <a href="#">
                 <img src="https://seeklogo.com/images/I/instagram-logo-1494D6FE63-seeklogo.com.png" class="media-icon" style="left:900px; padding:10px;">
             </a>
+            <a href="https://github.com/ObtuseTriangle">
+                <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/7914417/github-icon-md.png" class="media-icon" style="left:900px; padding:5px;">
+            </a>
             
         </div>
-        
         <br>
-        <hr style="border-color:#da4747;">
+        <br>
+
+    <div style="background-color: #121212; bottom:500; position: absolute; width: 100%; border-top: 1px solid #da4747;">
+
     <!--
         <form>
             <label for="email">Email: </label>
@@ -93,9 +107,38 @@
     -->
 
 
-
-        <p style="font-size: 20px; font-family: 'Nunito Sans';">Statement of Originality: This website was made, in its entirety, by me: Oliver Bohon.</p>
+        <p style="font-size: 20px; font-family: 'Nunito Sans'; line-height: 10px;">Statement of Originality: This website was made, in its entirety, by me: Oliver Bohon.</p>
+        <p style="font-size: 20px; font-family: 'Nunito Sans'; line-height: 8px;">Copyright © 2023 Oliver Bohon</p>
+    </div>
     </footer>
+
+    <div class="scrollCont">
+        <button class="scroll-to-top">^</button>
+    </div>  
+              
+    <script>
+            let scrollToTop = document.querySelector(".scroll-to-top");
+
+            //scrollToTop.onclick=function(){
+            //    document.documentElement.scrollTop = 0;
+            //}
+            scrollToTop.addEventListener("click", testFunction);
+            function testFunction() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                })
+            };
+
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollBar").style.width = scrolled + "%";
+            }
+    </script>
 </body>
 
 </html>

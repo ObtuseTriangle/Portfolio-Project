@@ -9,31 +9,77 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/5N6Rtvr1/oli2-2.png">
     <title>My Portfolio</title>
 </head>
 <body>
     <div class="navbar">
         <ul>
             <a href="index.html"><img src="https://i.postimg.cc/L5pS5MJM/my-Portfolio.png" class="logo" alt="logo"></a>
-
+            <li class="navli"><a href="devlog.html">Developer's Log</a></li>
             <li class="navli"><a href="myskills.html">My Skills</a></li>
             <li class="active navli"><a href="myportfolio.html">My Portfolio</a></li>
             <li class="navli"><a href="aboutme.html">About Me</a></li>
             <li class="navli"><a href="index.html">Home</a></li>
         </ul>
+        <div class="progressBarCont">
+            <div class="progressBar" id="scrollBar"></div>
+        </div>
     </div>
-    <div class="myskills">
-        <br>
-        <br>
-        <br>
-       
-            <h1 class="generalheader" style="font-size: 100px;"> My Portfolio: </h1>
-            <hr style="border-color: #da4747;"> <br>
+    <div class="parentContainer" style="text-align: left; border-bottom: none;">
+        <div class="myskills">
+            <br>
+            <br>
+            <br>
+        
+                <h1 class="generalheader" style="font-size: 100px;"> My Portfolio: </h1>
+                <p class="centerUnderline" style="top: -20px; margin-left: 15px; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p>
+                <hr style="border-color: #da4747;"> <br>
+        </div>
     </div>
+        <br>
+        <br>
+        <div class="flexboxParent">
+            <div class="portfolio-work" style="border-radius: 10px;">
+                <h1 class="generalheader">Quiz Game: </h1>
+                
+                <a href="https://ob-quiz-unit-5.oliverbohon1.repl.co/"><img src="https://i.postimg.cc/Dw61Sq4J/quizgame.png" style="width: 60%; border: 2px solid #da4747; border-radius: 10px; height: 350px;"></a>
+                <br> <br>   
+                <p>Play this quiz game and see what animal you are based on your tastes!</p>
+            </div>
+        </div>
+        <div class="flexboxParent">
+            <div class="portfolio-work" style="border-radius: 10px;">
+                <h1 class="generalheader">Choose Your Own Adventure: </h1>
+                <a href="https://ob-cyoa-project.oliverbohon1.repl.co/"><img src="https://i.postimg.cc/WznsG6RC/cyoagame.png" style="width: 60%; border: 2px solid #da4747; border-radius: 10px; height: 350px;"></a>
+                <br> <br>   
+                <p>How would you fare in this job interview? Choose your own fate in this mini webgame!</p>
+            </div>
+        </div>
+        <div class="scrollCont">
+            <button class="scroll-to-top">^</button>
+        </div>  
+        <div style="background-color: #121212; bottom:500; position: absolute; width: 100%; border-top: 1px solid #da4747;">
+            <p style="font-size: 20px; font-family: 'Nunito Sans'; line-height: 8px;">Copyright © 2023 Oliver Bohon</p>
+        </div>
+        <script>
+                let scrollToTop = document.querySelector(".scroll-to-top");
+                scrollToTop.addEventListener("click", testFunction);
+                function testFunction() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth",
+                    })
+                };
+                window.onscroll = function() {myFunction()};
 
-    <p>These are some of my previous works! </p>
-
-        <p>hi</p>
+                function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("scrollBar").style.width = scrolled + "%";
+                }
+        </script>
 
 </body>
 </html>

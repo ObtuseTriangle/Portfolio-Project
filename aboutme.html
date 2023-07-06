@@ -9,50 +9,89 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/5N6Rtvr1/oli2-2.png">
     <title>About Me</title>
 </head>
 <body>
     <div class="navbar">
         <ul>
             <a href="index.html"><img src="https://i.postimg.cc/L5pS5MJM/my-Portfolio.png" class="logo" alt="logo"></a>
+            <li class="navli"><a href="devlog.html">Developer's Log</a></li>
             <li class="navli"><a href="myskills.html">My Skills</a></li>
             <li class="navli"><a href="myportfolio.html">My Portfolio</a></li>
             <li class="active navli"><a href="aboutme.html">About Me</a></li>
             <li class="navli"><a href="index.html">Home</a></li>
         </ul>
+        <div class="progressBarCont">
+            <div class="progressBar" id="scrollBar"></div>
+        </div>
     </div>
+    <div class="parentContainer" style="text-align: left; border-bottom: none;">
+        <div class="myskills">
+            <br>
+            <br>
+            <br>
+        
+                <h1 class="generalheader" style="font-size: 100px;"> About me: </h1>
+                <p class="centerUnderline" style="top: -20px; margin-left: 15px; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p>
 
-    <div class="myskills">
-        <br>
-        <br>
-        <br>
-       
-            <h1 class="generalheader" style="font-size: 100px;"> About me: </h1>
-            <hr style="border-color: #da4747;"> <br>
+                <hr style="border-color: #da4747;"> <br>
+        </div>
     </div>
-    <h1 class="generalheader" style="text-align: center;">My Story </h1>
-    <p class="intro1" style="margin-left: 5%; width: 90%; text-indent: 50px;">My parents used to live in a small commune in Southern Indiana called "Padanaram". My mom is the grandaughter of the founder of the commune.
-        At one point, they decided to leave, and my mom went to medical school, and we moved away. But I still have a lot of connection to "The Valley", as it is nicknamed.
+    <h1 class="generalheader underlined" style="text-align: center;">My Story </h1>
+    <p class="intro1" style="margin-left: 5%; width: 90%; text-indent: 50px;">My parents used to live in a small commune in Southern Indiana called "Padanaram". My mom is the granddaughter of the founder of the commune.
+        At one point, they decided to leave, and my mom went to medical school, so we moved away. But I still have a lot of connection to my roots there.
     </p>
     <br> 
-    <img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png" style="width: 90%; height: 400px; margin-left: 5%; border: 1px solid #da4747;"> <br>
+    <div class="carousel-container">
+        <img src="https://www.firstbenefits.org/wp-content/uploads/2017/10/placeholder.png" style="width: 90%; height: 400px; margin-left: 5%; border: 1px solid #da4747;"> <br>
+    </div>
     <br>
     <p class="intro1" style="margin-left: 5%; width: 90%; text-indent: 50px;"> I grew up in Bedford, before moving to Bloomington for High-School. Since then, I've been exploring coding through Bloomington South's CS classes, slowly gaining experience and understanding of computers.
     <br>
     <p class="intro1" style="margin-left: 5%; width: 90%; text-indent: 50px;">
-    I'm also a Type-1 Diabetic, something that has, interestingly, spiked some more interest in computer science. In order to predict blood sugar in live time, there is a sensor and algorithm, developed by a programmer. At some point, I'd like to be able to understand, and maybe help with, the development of such life-saving technologies.
+        I also have a lot of interest in prediction algorithms and how technology interacts with health, as those are two things I'm really interested in. For example, as a type-1 diabetic, I have a continuous monitor that reads blood glucose. That then is sent to an insulin pump, which uses 
+        patterns and an algorithm to predict where my blood sugar will be in an hour, and it then automatically delivers or suspends insulin. I'd love to contribute to a project as incredible as that one day.
     </p>            <hr style="border-color: #da4747;"> 
 
-    <h1 class="generalheader" style="text-align: center;">My Nextech Journey </h1>
+    <h1 class="generalheader underlined" style="text-align: center;">My Nextech Journey </h1>
     <p class="intro1" style="margin-left: 5%; width: 90%; text-indent: 50px;"> I came to Nextech to help me gain a better understanding of computer science and the careers that encompass it. 
-    I've always been split between being a doctor, helping patients like my mom does every day, or being a computer scientist, as I've come to enjoy the development process a lot.
-    </p><p class="intro1" style="margin-left: 5%; width: 90%;">Through my time at Nextech, I've come to meet a great group of people, and I've learned a lot. I'm grateful to have had the opportunity. </p> 
+    I've always been partial to math and technology, and this seemed like a good opportunity to furthen my horizons with computers, an increasingly valuable and integral skill.
+    </p><p class="intro1" style="margin-left: 5%; width: 90%;">Through my time at Nextech, I've come to meet a great group of people, and I've learned a lot. The instructors and the environment they provide encourages learning, and I think I've improved tenfold as a programmer from this experience. I also can't overstate the importance of having a friendly, collaborative environment to work in, and I think that is encouraged with Nextech. I'm grateful to have had the opportunity provided to me. </p> 
     <hr style="border-color: #da4747;"> 
-    <h1 class="generalheader" style="text-align: center;">Where I Want to Go </h1>
+    <h1 class="generalheader underlined" style="text-align: center;">Where I Want to Go </h1>
     <p class="intro1" style="margin-left: 5%; width: 90%; text-indent: 50px;">
-        As I've stated, I want to either become a doctor or a computer scientist. I want to be able to help the world with whatever I have, and whether that's through working with a patient, or through making an algorithm to predict low blood sugars, I hope to make a change.
+        I want to be able to help the world with whatever I have, and whether that's through working with a patient, through making an algorithm to predict low blood sugars, or something else entirely, I hope to make a change.
     </p>
     <br>
+    <div style="background-color: #121212; bottom:500; position: absolute; width: 100%; border-top: 1px solid #da4747;">
+        <p style="font-size: 20px; font-family: 'Nunito Sans'; line-height: 8px;">Copyright © 2023 Oliver Bohon</p>
+    </div>
+    <div class="scrollCont">
+        <button class="scroll-to-top">^</button>
+    </div>  
+              
+    <script>
+            let scrollToTop = document.querySelector(".scroll-to-top");
 
+            //scrollToTop.onclick=function(){
+            //    document.documentElement.scrollTop = 0;
+            //}
+            scrollToTop.addEventListener("click", testFunction);
+            function testFunction() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth",
+                })
+            };
+            window.onscroll = function() {myFunction()};
+
+            function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("scrollBar").style.width = scrolled + "%";
+            }
+    </script>
 </body>
 </html>
