@@ -30,6 +30,7 @@ form{
 }
 body{
     background-color: #1a1a1a  ;
+    scroll-behavior: smooth;
     /*background-image: url(https://media2.giphy.com/media/QTc4NvhYNlyT7Q32uj/giphy.gif);*/
 }
 p{
