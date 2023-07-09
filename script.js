@@ -17,6 +17,15 @@ collapseButton.onclick=function(){
 };
 */
 
+let accessibilityMenu = document.querySelector(".accessibility-menu");
+let popUp = document.querySelector(".popUp");
+accessibilityMenu.onclick = function(){
+    popUp.style.display = "block";
+};
+let x = document.querySelector(".x-out");
+x.onclick = function() {
+    popUp.style.display = "none";
+}
 let scrollToTop = document.querySelector(".scroll-to-top");
 
 //scrollToTop.onclick=function(){

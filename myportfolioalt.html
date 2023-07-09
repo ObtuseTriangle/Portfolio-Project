@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="stylealt.css" rel="stylesheet" type="text/css" />
     <link href='https://fonts.googleapis.com/css?family=Heebo' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,12 +15,12 @@
 <body>
     <div class="navbar">
         <ul>
-            <a href="index.html"><img src="./myPortfolio.png" class="logo" alt="logo"></a>
-            <li class="navli"><a href="devlog.html">Developer's Log</a></li>
-            <li class="navli"><a href="myskills.html">My Skills</a></li>
-            <li class="active navli"><a href="myportfolio.html">My Portfolio</a></li>
-            <li class="navli"><a href="aboutme.html">About Me</a></li>
-            <li class="navli"><a href="index.html">Home</a></li>
+            <a href="indexalt.html"><img src="./myPortfolioalt.jpg" class="logo" alt="logo"></a>
+            <li class="navli"><a href="devlogalt.html">Developer's Log</a></li>
+            <li class="navli"><a href="myskillsalt.html">My Skills</a></li>
+            <li class="active navli"><a href="myportfolioalt.html">My Portfolio</a></li>
+            <li class="navli"><a href="aboutmealt.html">About Me</a></li>
+            <li class="navli"><a href="indexalt.html">Home</a></li>
         </ul>
         <div class="progressBarCont">
             <div class="progressBar" id="scrollBar"></div>
@@ -34,7 +34,7 @@
         
                 <h1 class="generalheader" style="font-size: 100px;"> My Portfolio: </h1>
                 <p class="centerUnderline" style="top: -20px; margin-left: 15px; "> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </p>
-                <hr style="border-color: #da4747;"> <br>
+                <hr style="border-color: black;"> <br>
         </div>
     </div>
         <br>
@@ -59,13 +59,13 @@
         <div class="scrollCont">
             <button class="scroll-to-top">^</button>
         </div>  
-        <div style="background-color: #121212; bottom:500; position: absolute; width: 100%; border-top: 1px solid #da4747;">
+        <div style="background-color: lightgray; bottom:500; position: absolute; width: 100%; border-top: 1px solid black;">
 
             <div class="accessibilityContainer" style="float:right; margin: 5px; margin-right: 80px; ">
                 <button class="accessibility-menu">Accessibility</button>
             </div>
     
-            <div style="background-color: #121212;">
+            <div style="background-color: lightgray;">
                 <p style="font-size: 20px; font-family: 'Nunito Sans'; line-height: 7px;">Copyright © 2023 Oliver Bohon</p>
             </div>
     
@@ -77,7 +77,7 @@
                 <h1 style="margin-left: 5%; margin-top: 0px;">Accessibility Menu:</h1>
                 <br>
                 <div class="darkModeContainer">
-                    <a href="myportfolioalt.html"><button class="darkModeToggle">Turn dark mode off</button></a>
+                    <a href="myportfolio.html"><button class="darkModeToggle">Turn dark mode on</button></a>
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
                 let x = document.querySelector(".x-out");
                 x.onclick = function() {
                     popUp.style.display = "none";
-                }
+            }
                 let scrollToTop = document.querySelector(".scroll-to-top");
                 scrollToTop.addEventListener("click", testFunction);
                 function testFunction() {

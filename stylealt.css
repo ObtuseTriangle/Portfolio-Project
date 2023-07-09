@@ -10,10 +10,10 @@
 
 h1{
     font-family: 'Heebo';
-    color:white;
+    color:black;
 }
 label{
-    color:white;
+    color:black;
     font-size: 20px;
 }
 form{
@@ -26,22 +26,24 @@ form{
 .welcome{
     font-size: 200px;
     text-align: left;
-    color:#BACCD6;
+    color:black;
 }
 body{
-    background-color: #1a1a1a  ;
+    animation: fadeBackground 1s;
+    animation-fill-mode: forwards;
+    background-color: #f0f0f0;
     scroll-behavior: smooth;
     /*background-image: url(https://media2.giphy.com/media/QTc4NvhYNlyT7Q32uj/giphy.gif);*/
 }
 p{
-    color: white;
+    color: black;
     font-size: 30px;
     margin: 20px;
 }   
 .parentContainer{
     position:relative;
     text-align:center;
-    border-bottom: 1px solid #da4747;
+    border-bottom: 1px solid black;
 }
 .container{
     text-align:center;
@@ -52,7 +54,7 @@ p{
     animation: .5s ease-out 0s 1 leftSlide;
     font-size: 175px;
     font-family: 'Heebo';
-    color:#F6F0ED;
+    color:black;
     position:absolute;
     text-align: center;
     bottom:0px;
@@ -63,7 +65,7 @@ p{
     animation: 1.4s ease-out 0s 1 leftSlide;
     font-size: 175px;
     font-family: 'Heebo';
-    color:#F6F0ED;
+    color:black;
     position:absolute;
     text-align: center;
     bottom:0px;
@@ -77,7 +79,7 @@ p{
 }
 li a{
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 22px 50px;
     text-decoration: none;
@@ -87,11 +89,11 @@ li a{
 ul{
     list-style-type: none;
     overflow:hidden;
-    background: rgb(25, 18, 18);
+    background: lightgray;
 }
 .hidden{
     display:none;
-    color: white;
+    color: black;
     margin: 20px;
     justify-content: center;
     text-align: center;
@@ -106,8 +108,8 @@ ul{
 
 
 .active{
-    background-color: gray;
-    color: white;
+    background-color: rgb(156, 156, 156);
+    color: black;
 }
 
 .w3container{
@@ -128,7 +130,7 @@ ul{
     z-index: 999;
     top: 60px;
     width: 100%;
-    background: gray;
+    background: black;
     height: 3px;
 }
 .progressBar{
@@ -140,7 +142,7 @@ ul{
 }
 
 li :hover{
-    background-color: gray;
+    background-color: rgb(156, 156, 156);
 }
 .logolink{
     border: 1px solid transparent
@@ -175,7 +177,7 @@ li :hover{
     display: inline-flex;
 }
 .generalheader{
-    color:white;
+    color:black;
     font-size:70px; 
     margin: 20px;
     font-family: 'Nunito Sans';
@@ -214,7 +216,7 @@ li :hover{
 .flexboxParent2{
     display: flex;
     width: 100%;
-    background-color: #121212;
+    background-color: lightgray;
 
 }
 .hoverbutton :hover{
@@ -232,7 +234,7 @@ li :hover{
 
 }
 .flexboxParent :hover{
-    background-color: #282828;
+    background-color: rgb(232, 231, 231);
 }
 .column1{
     margin-left: 5%;
@@ -251,7 +253,7 @@ li :hover{
     filter: grayscale(20%);
 }
 .myskills{
-    background-color: #121212;
+    background-color: lightgray;
 }
 .skill-desc{
     margin-left: 20px;
@@ -260,19 +262,19 @@ li :hover{
     width: 90%;
     margin-left: 5%;
     padding-bottom: 40px;
-    background-color: #121212;
+    background-color: lightgray;
     border: 1px solid #da4747;
     transition: background-color 0.3s ease-out 20ms;
 }
 .otherskills :hover{
-    background-color: #1a1a1a;
+    background-color: rgb(232, 231, 231);
 }
 .otherskills{
-    background-color: #121212;
+    background-color: lightgray;
     border-top: 1px solid #da4747;
 }
 .media-icons :hover{
-    background-color: #282828;
+    background-color: rgb(232, 231, 231);
 }
 .view-all-container{
     display: flex;
@@ -284,7 +286,7 @@ li :hover{
 .view-all-container :hover{
     box-shadow: inset;
     border-color: #da4747;
-    background-color: #282828;
+    background-color: rgb(232, 231, 231);
 }
 
 .abt-me-view-all{
@@ -293,11 +295,11 @@ li :hover{
     width: 90%;
     transition: background-color 0.3s ease-out 20ms;
     border-color:#da4747;
-    background-color: #121212;
+    background-color: lightgray;
     justify-content: center;
     vertical-align: middle;
     border-radius: 10px;
-    color:beige;
+    color:black;
     letter-spacing: 1px;
     font-family: 'Nunito Sans';
     
@@ -328,7 +330,7 @@ hr{
 }
 
 .scrollCont :hover{
-    background: linear-gradient(#363636, #363636) padding-box, linear-gradient(to right, red, purple) border-box;;
+    background: linear-gradient(rgb(232, 231, 231), rgb(232, 231, 231)) padding-box, linear-gradient(to right, red, purple) border-box;;
 
 }
 .scroll-to-top{ 
@@ -339,10 +341,9 @@ hr{
     bottom: 20px;
     right: 20px;
 
-    background-color: #282828;
-    color:white;
+    color:black;
     border: 3px solid transparent;
-    background: linear-gradient(#282828, #282828) padding-box, linear-gradient(to right, red, purple) border-box;
+    background: linear-gradient(#f0f0f0, #f0f0f0) padding-box, linear-gradient(to right, red, purple) border-box;
 
 
     font-size: 32px;
@@ -361,7 +362,7 @@ hr{
 
 }
 .devMenu :hover{
-    background-color: #282828;
+    background-color: rgb(232, 231, 231);
 }
 .devMenuItem{
     justify-content: right;
@@ -374,47 +375,47 @@ hr{
     letter-spacing: 1px;
     transition: background-color 0.3s ease-out 20ms;
     border-color:#da4747;
-    background-color: #121212;
-    color: white;
+    background-color: lightgray;
+    color: black;
     border-radius: 5px;
 }
 /* Hidden Tabs on Dev Log Page */
 .homeLog{
     display:none;
-    background-color: #121212;
+    background-color: lightgray;
     margin: 2%;
     border: 1px solid #da4747;
 }
 .aboutLog{
     display:none;
-    background-color: #121212;
+    background-color: lightgray;
     margin: 2%;
     border: 1px solid #da4747;
 }
 .portfolioLog{
     display:none;
-    background-color: #121212;
+    background-color: lightgray;
     margin: 2%;
     border: 1px solid #da4747;
 
 }
 .skillsLog{
     display:none;
-    background-color: #121212;
+    background-color: lightgray;
     margin: 2%;
     border: 1px solid #da4747;
 
 }
 .devLogLog{
     display:none;
-    background-color: #121212;
+    background-color: lightgray;
     margin: 2%;
     border: 1px solid #da4747;
 
 }
 
 .devBulletPoints{
-    color: white;
+    color: black;
     font-size: 30px;
     margin: 20px;
 }
@@ -424,14 +425,14 @@ hr{
   
 .devContentList .devBulletPoints::before {
     content: "\2022";  
-    color: white; 
+    color: black; 
     display: inline-block; 
     width: 1em; 
     margin-left: -1em; 
   }
   .underlined{
     margin: auto;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid black;
     width: 800px;
     padding-bottom: 2px;
   }
@@ -447,19 +448,19 @@ hr{
     width: 150px;
     border-radius: 5px;
     border: 2px solid #da4747;
-    background-color: #181818;
-    color: white;
+    background-color: lightgray;
+    color: black;
     transition: background-color 0.3s ease-out 20ms;
   }
   .accessibilityContainer :hover{
-    background-color: #282828;
+    background-color: rgb(232, 231, 231);
   }
   .popUp{
     display:none;
     width: 600px;
     height: 300px;
-    background-color: #121212;
-    color: white;
+    background-color: lightgray;
+    color: black;
     opacity: 99%;
     z-index: 90;
     position: fixed;
@@ -475,13 +476,13 @@ hr{
     width: 200px;
     border-radius: 5px;
     border: 2px solid #da4747;
-    background-color: #181818;
-    color: white;
+    background-color: white;
+    color: black;
     transition: background-color 0.3s ease-out 20ms;
   }
   .darkModeContainer{
     margin-left: 5%;
   }
   .darkModeContainer :hover{
-    background-color: #282828;
+    background-color: rgb(232, 231, 231);
   }
